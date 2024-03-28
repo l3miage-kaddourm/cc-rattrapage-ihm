@@ -1,0 +1,42 @@
+$W: 32px;
+$w: calc($W - 4px);
+
+:host {
+  display: block;
+
+  table {
+    border-collapse: collapse;
+    border: solid black 2px;
+    background-color: lightgrey;
+    cursor: pointer;
+
+    td {
+      width: $W;
+      height: $W;
+      text-align: center;
+      vertical-align: middle;
+
+      &.hilight {
+        background-color: greenyellow;
+      }
+      
+      div {
+        width: $w;
+        height: $w;
+        margin: calc( ($W - $w) / 2 );
+        background-color: white;
+        border: solid black 1px;
+        border-radius: 50%;
+
+        &.RED {
+          background-color: red;
+        }
+
+        &.YELLOW {
+          background-color: yellow;
+        }
+
+      }
+    }
+  }
+}
